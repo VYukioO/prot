@@ -338,14 +338,29 @@ label {
     color: #fff;
 }
 
+.light-green {
+    /* background-color: #1CC09F; */
+    color: rgb(0, 0, 0);
+}
+
 .blue {
     background-color: #FFFFFF;
     color: #002A4C;
 }
 
+.light-blue {
+    /* background-color: #FFFFFF; */
+    color: rgb(0, 0, 0);
+}
+
 .red {
     background-color: #FB6E51;
     color: #fff;
+}
+
+.light-red {
+    background-color: #f7a393;
+    color: rgb(0, 0, 0);
 }
 
 .brown {

@@ -127,7 +127,7 @@
                         <a href="#" class="waves-effect waves-dark"><i class="fa fa-user"></i>Perfil<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="usuario.html" class="waves-effect waves-dark"><i class="fa fa-id-badge"></i>Meu Perfil</a>
+                                <a href="usuario.html" class="active-menu waves-effect waves-dark"><i class="fa fa-user-edit"></i>Meu Perfil</a>
                             </li>
                             <li>
                                 <a href="edtSenha.html" class="waves-effect waves-dark"><i class="fa fa-edit"></i>Alterar Senha</a>
@@ -147,79 +147,136 @@
         <div id="page-wrapper">
             <div class="header">
                 <h1 class="page-header">
-                    Produto
+                    Perfil
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active">Produto 1</li>
+                    <li class="active">Perfil</li>
                 </ol>
+
             </div>
 
             <div id="page-inner">
                 <div class="row">
-                    <div class="col-md-5 col-md-5">
+                    <div class="col-lg-12">
                         <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="http://materializecss.com/images/office.jpg">
+                            <div class="card-action">
+                                <h2>Meu Perfil</h2>
+                            </div>
+                            <div class="card-content text-center">
+                                <div class="row">
+                                    <div class="card-image waves-effect waves-block waves-light col-md-4">
+                                        <img class="activator" src="http://materializecss.com/images/office.jpg">
+                                    </div>
+                                    <h3>Nome do Usuario</h3>
+                                    </br>
+                                    <p>email@email.com</p>
+                                    <p>cpf.cpf.cpf-xx</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-md-6">
+                    <div class="col-lg-12">
                         <div class="card">
+                            <div class="card-action">
+                                <h3>Endereços</h3>
+                            </div>
                             <div class="card-content">
-                                <h1><b>PRODUTO 1</b></h1>
-                                </br>
-                                <h2>
-                                    R$123,23
-                                </h2>
-                                <h4>Descrição: Muito bom, fodao, daora pra caralho.</h4>
-                                <form>
-                                    <div class="form-group">
-                                        <div class="col-md-8 col-md-8">
-                                            <label for="dimensoes">Dimensões</label>
-                                            <select class="form-control" id="dimensoes">
-                                                  <option value="20x30 cm">20x30 cm</option>
-                                                  <option value="30x40 cm">30x40 cm</option>
-                                                  <option value="40x60 cm">40x60 cm</option>
-                                                </select>
+                                <ul class="collapsible" data-collapsible="accordion">
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons right"></i>Descrição Endereço 1</div>
+                                        <div class="collapsible-body">
+                                            <p>
+                                                Rua rua rua, 333 - Centro - Guararema - SP</br>
+                                                08900-000</br>
+                                                perto do supermercado
+                                            </p>
+                                            <a class="btn waves-effect waves-light btn-primary hover" href="edtEndereco.html">Editar</a>
+                                            <a class="btn waves-effect waves-light btn-danger hover" href="#">Excluir</a>
                                         </div>
-                                        <div class="col-md-8 col-md-8">
-                                            <label for="moldura">Moldura</label>
-                                            <select class="form-control" id="moldura">
-                                                    <option value="sem moldura">sem moldura</option>
-                                                    <option value="preta">preta</option>
-                                                    <option value="branca">branca</option>
-                                                    <option value="tabaco">tabaco</option>
-                                                    <option value="natural">natural</option>
-                                                    <option value="azul">azul</option>
-                                                    <option value="vermelha">vermelha</option>
-                                                    <option value="rosa">rosa</option>
-                                                </select>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons"></i>Descrição Endereço 2</div>
+                                        <div class="collapsible-body">
+                                            <p>
+                                                Rua rua rua 2, 333 - Centro - Mogi das Cruzes - SP</br>
+                                                08900-000</br>
+                                                perto de uma escola
+                                            </p>
+                                            <a class="btn waves-effect waves-light btn-primary hover" href="edtEndereco.html">Editar</a>
+                                            <a class="btn waves-effect waves-light btn-danger hover" href="#">Excluir</a>
                                         </div>
-                                        <div class="col-md-8 col-md-8">
-                                            <label for="acabamento">Acabamento</label>
-                                            <select class="form-control" id="acabamento">
-                                                    <option value="sem vidro">sem acabamento</option>
-                                                    <option value="acrílico">acrílico</option>
-                                                </select>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons"></i>Descrição Endereço 3</div>
+                                        <div class="collapsible-body">
+                                            <p>
+                                                Rua rua rua 3, 4622 - Centro - Guararema - SP</br>
+                                                08900-000</br>
+                                                Ao lado do posto de combustivel
+                                            </p>
+                                            <a class="btn waves-effect waves-light btn-primary hover" href="edtEndereco.html">Editar</a>
+                                            <a class="btn waves-effect waves-light btn-danger hover" href="#">Excluir</a>
                                         </div>
-                                    </div>
-                                    <div class="clearBoth"><br/>
-                                        <a href="carrinho.html" class="waves-effect waves-light btn">Adicionar ao carrinho</a>
-                                    </div>
-                                </form>
-                                <div class="clearBoth"><br/></div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-action">
+                                <h3>Cartões</h3>
+                            </div>
+                            <div class="card-content">
+                                <ul class="collapsible" data-collapsible="accordion">
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons right"></i>
+                                            <table>
+                                                <th>Bandeira</th>
+                                                <th>Final:XXXX</th>
+                                            </table>
+                                        </div>
+                                        <div class="collapsible-body">
+                                            <p>
+                                                Bandeira Final: XXXX
+                                                </br>
+                                                Nome no cartao
+                                            </p>
+                                            <a class="btn waves-effect waves-light btn-primary hover" href="edtEndereco.html">Editar</a>
+                                            <a class="btn waves-effect waves-light btn-danger hover" href="#">Excluir</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons right"></i>
+                                            <table>
+                                                <th>Bandeira</th>
+                                                <th>Final:XXXX</th>
+                                            </table>
+                                        </div>
+                                        <div class="collapsible-body">
+                                            <p>
+                                                Bandeira Final: XXXX
+                                                </br>
+                                                Nome no cartao
+                                            </p>
+                                            <a class="btn waves-effect waves-light btn-primary hover" href="#">Editar</a>
+                                            <a class="btn waves-effect waves-light btn-danger hover" href="#">Excluir</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <footer>
-                    <p>All right reserved. Template by: <a href="https://webthemez.com/admin-template/">WebThemez.com</a></p>
-                </footer>
             </div>
-            <!-- /. PAGE INNER  -->
+            <footer>
+                <p>All right reserved. Template by: <a href="https://webthemez.com/admin-template/">WebThemez.com</a></p>
+            </footer>
         </div>
-        <!-- /. PAGE WRAPPER  -->
+        <!-- /. PAGE INNER  -->
+    </div>
+    <!-- /. PAGE WRAPPER  -->
     </div>
     <!-- /. WRAPPER  -->
     <!-- JS Scripts-->

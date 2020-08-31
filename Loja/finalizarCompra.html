@@ -112,7 +112,7 @@
                         <a href="menu.html" class="waves-effect waves-dark"><i class="fa fa-th-list"></i>Menu Principal</a>
                     </li>
                     <li>
-                        <a href="carrinho.html" class="waves-effect waves-dark"><i class="fa fa-shopping-cart"></i>Carrinho</a>
+                        <a href="carrinho.html" class="active=menu waves-effect waves-dark"><i class="fa fa-shopping-cart"></i>Carrinho</a>
                     </li>
                     <li>
                         <a href="pedidos.html" class="waves-effect waves-dark"><i class="fa fa-paste"></i>Pedidos</a>
@@ -127,7 +127,7 @@
                         <a href="#" class="waves-effect waves-dark"><i class="fa fa-user"></i>Perfil<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="usuario.html" class="waves-effect waves-dark"><i class="fa fa-id-badge"></i>Meu Perfil</a>
+                                <a href="usuario.html" class="waves-effect waves-dark"><i class="fa fa-user-edit"></i>Meu Perfil</a>
                             </li>
                             <li>
                                 <a href="edtSenha.html" class="waves-effect waves-dark"><i class="fa fa-edit"></i>Alterar Senha</a>
@@ -147,79 +147,122 @@
         <div id="page-wrapper">
             <div class="header">
                 <h1 class="page-header">
-                    Produto
+                    Finalizar Compra
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active">Produto 1</li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                    <li class="active">Finalizar Compra</li>
                 </ol>
             </div>
 
             <div id="page-inner">
-                <div class="row">
-                    <div class="col-md-5 col-md-5">
+                <form>
+                    <div class="col-md-12">
                         <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="http://materializecss.com/images/office.jpg">
+                            <div class="card-action">
+                                Produtos Adicionados ao Carrinho
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-md-6">
-                        <div class="card">
                             <div class="card-content">
-                                <h1><b>PRODUTO 1</b></h1>
-                                </br>
-                                <h2>
-                                    R$123,23
-                                </h2>
-                                <h4>Descrição: Muito bom, fodao, daora pra caralho.</h4>
-                                <form>
-                                    <div class="form-group">
-                                        <div class="col-md-8 col-md-8">
-                                            <label for="dimensoes">Dimensões</label>
-                                            <select class="form-control" id="dimensoes">
-                                                  <option value="20x30 cm">20x30 cm</option>
-                                                  <option value="30x40 cm">30x40 cm</option>
-                                                  <option value="40x60 cm">40x60 cm</option>
-                                                </select>
-                                        </div>
-                                        <div class="col-md-8 col-md-8">
-                                            <label for="moldura">Moldura</label>
-                                            <select class="form-control" id="moldura">
-                                                    <option value="sem moldura">sem moldura</option>
-                                                    <option value="preta">preta</option>
-                                                    <option value="branca">branca</option>
-                                                    <option value="tabaco">tabaco</option>
-                                                    <option value="natural">natural</option>
-                                                    <option value="azul">azul</option>
-                                                    <option value="vermelha">vermelha</option>
-                                                    <option value="rosa">rosa</option>
-                                                </select>
-                                        </div>
-                                        <div class="col-md-8 col-md-8">
-                                            <label for="acabamento">Acabamento</label>
-                                            <select class="form-control" id="acabamento">
-                                                    <option value="sem vidro">sem acabamento</option>
-                                                    <option value="acrílico">acrílico</option>
-                                                </select>
-                                        </div>
-                                    </div>
-                                    <div class="clearBoth"><br/>
-                                        <a href="carrinho.html" class="waves-effect waves-light btn">Adicionar ao carrinho</a>
-                                    </div>
-                                </form>
-                                <div class="clearBoth"><br/></div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>foto</th>
+                                                <th>Item</th>
+                                                <th>Quantidade</th>
+                                                <th>Preço</th>
+                                                <th>Excluir</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img width="70px" src="http://materializecss.com/images/office.jpg">
+                                                </td>
+                                                <td>Produto 1</td>
+                                                <td><input type="number" id=quantidade value="1" min="1" max="10" aria-label="Search" style="width: 35px"></td>
+                                                <td>R$ 65,00</td>
+                                                <td>Excluir</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img width="70px" src="http://materializecss.com/images/office.jpg">
+                                                </td>
+                                                <td>Produto 1</td>
+                                                <td><input type="number" id=quantidade value="3" min="1" max="10" aria-label="Search" style="width: 35px"></td>
+                                                <td>R$ 65,00</td>
+                                                <td>Excluir</td>
+                                            </tr>
+                                            <!-- <tr>
+                                                <td>
+                                                    <h3><b>TOTAL:</b></h3>
+                                                </td>
+                                                <td>
+                                                    <h3><b>R$ 1231,00</b></h3>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <a href="#" class="waves-effect waves-light btn hover"><i class="fa fa-dolly fa-fw"></i><b>Finalizar Compra</b></a>
+                                                </td>
+                                            </tr> -->
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <footer>
-                    <p>All right reserved. Template by: <a href="https://webthemez.com/admin-template/">WebThemez.com</a></p>
-                </footer>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-action">
+                                Selecionar Endereço de Entrega
+                            </div>
+                            <div class="card-content">
+                                <div class="input-field col s12">
+                                    <input name="group1" type="radio" id="endereco1">
+                                    <label for="endereco1">
+                                        Rua Rua, 444, Bairro Bairro - 12345-123 - Cidade cidade
+                                    </label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input name="group1" type="radio" id="endereco2">
+                                    <label for="endereco2">
+                                        Rua Rua, 444, Bairro Bairro - 12345-123 - Cidade cidade
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-action">
+                                Selecionar Meio de Pagamento
+                            </div>
+                            <div class="card-content">
+                                <div class="input-field col s12">
+                                    <input name="group2" type="radio" id="cartao1">
+                                    <label for="cartao1">
+                                        Bandeira - Final - Nome no Cartão - Validade
+                                    </label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input name="group2" type="radio" id="cartao2">
+                                    <label for="cartao2">
+                                        MasterCard - 9876 - Victor Yukio Okuda - 07/25
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <!-- /. PAGE INNER  -->
+            <footer>
+                <p>All right reserved. Template by: <a href="https://webthemez.com/admin-template/">WebThemez.com</a></p>
+            </footer>
         </div>
-        <!-- /. PAGE WRAPPER  -->
+        <!-- /. PAGE INNER  -->
+    </div>
+    <!-- /. PAGE WRAPPER  -->
     </div>
     <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
